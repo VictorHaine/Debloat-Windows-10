@@ -45,6 +45,10 @@ Unblock PowerShell scripts and modules within this directory:
     PS > ls -Recurse *.ps1 | Unblock-File
     PS > ls -Recurse *.psm1 | Unblock-File
 
+Execute all scripts within this directory:
+
+    PS > ls .\scripts\ | %{&$_.FullName}
+    
 ## Usage
 
 1. Install all available updates for your system.
